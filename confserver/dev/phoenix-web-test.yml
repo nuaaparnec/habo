@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
+ 
+    
+    
