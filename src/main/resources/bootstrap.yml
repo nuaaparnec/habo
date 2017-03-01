@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: phoenix-web-test
+  cloud:
+    config:
+      uri: http://msc.nuaaparnec.com:8888
+      label: ${DEPLOY_ENV}
+    consul:
+      host: consul.nuaaparnec.com
+      port: 80
+      discovery:
+        prefer-ip-address: true
+  sleuth:
+    log:
+      json:
+        enabled: false
+      slf4j:
+        enabled: false
+health.config.enabled: false
